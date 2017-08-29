@@ -1,0 +1,145 @@
+// Small screens
+header {
+    background-image: url('../img/backgroundhero.jpg');
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    height: 90vh;
+    #logo {
+        margin-top: 100px;
+    }
+    .grid-container,
+    .grid-y {
+        height: 100%;
+    }
+    
+}
+
+#intro {
+    padding: 100px 0 0;
+    #intro_image_2 {
+        position: relative;
+        top: -100px;
+        left: 300px;
+    }
+}
+
+#our_team {
+    background-color: #EAF5FB;
+    &,
+    .large-4,
+    .grid-y,
+    #team_image {
+        height: 600px;
+    }
+    #team_image {
+        background-image: url('../img/fototeam.jpg');
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+#competition {
+    padding: 100px 0;
+}
+
+#instagram {
+    padding: 20px 0 100px;
+}
+
+#promo_code {
+    background-image: url('../img/ban-back.jpg');
+    background-position: center center;
+    background-size: cover;
+    &,
+    .grid-y {
+        height: 600px;
+    }
+}
+
+#trip_advisor {
+    text-align: center;
+    padding: 100px 0;
+    p {
+        width: 90%;
+        margin: 20px auto 0;
+    }
+}
+
+#beaches {
+    padding: 20px 0 100px;
+    #matosinhos,
+    #leca {
+        position: relative;
+    }
+    #matosinhos {
+        div,
+        a {
+            position: absolute;
+            left: -60px;
+        }
+        div {
+            top: 20px;
+        }
+        a {
+            bottom: 20px;
+        }
+    }
+    #leca {
+        padding-top: 40px;
+        div,
+        a {
+            position: absolute;
+            right: -60px;
+            text-align: right;
+        }
+        div {
+            top: 60px;
+        }
+        a {
+            bottom: 60px;
+        }
+    }
+}
+
+footer {
+    background-image: url('../img/Background_footer.jpg');
+    background-position: top center;
+    background-size: cover;
+    height: 750px;
+}
+
+
+/* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+
+
+
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+    
+
+
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+
+
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */

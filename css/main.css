@@ -1,0 +1,132 @@
+@import url(foundation.css);
+header {
+  background-image: url("../img/backgroundhero.jpg");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  height: 90vh;
+}
+
+header #logo {
+  margin-top: 100px;
+}
+
+header .grid-container,
+header .grid-y {
+  height: 100%;
+}
+
+#intro {
+  padding: 100px 0 0;
+}
+
+#intro #intro_image_2 {
+  position: relative;
+  top: -100px;
+  left: 300px;
+}
+
+#our_team {
+  background-color: #EAF5FB;
+}
+
+#our_team,
+#our_team .large-4,
+#our_team .grid-y,
+#our_team #team_image {
+  height: 600px;
+}
+
+#our_team #team_image {
+  background-image: url("../img/fototeam.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#competition {
+  padding: 100px 0;
+}
+
+#instagram {
+  padding: 20px 0 100px;
+}
+
+#promo_code {
+  background-image: url("../img/ban-back.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#promo_code,
+#promo_code .grid-y {
+  height: 600px;
+}
+
+#trip_advisor {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#trip_advisor p {
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+#beaches {
+  padding: 20px 0 100px;
+}
+
+#beaches #matosinhos,
+#beaches #leca {
+  position: relative;
+}
+
+#beaches #matosinhos div,
+#beaches #matosinhos a {
+  position: absolute;
+  left: -60px;
+}
+
+#beaches #matosinhos div {
+  top: 20px;
+}
+
+#beaches #matosinhos a {
+  bottom: 20px;
+}
+
+#beaches #leca {
+  padding-top: 40px;
+}
+
+#beaches #leca div,
+#beaches #leca a {
+  position: absolute;
+  right: -60px;
+  text-align: right;
+}
+
+#beaches #leca div {
+  top: 60px;
+}
+
+#beaches #leca a {
+  bottom: 60px;
+}
+
+footer {
+  background-image: url("../img/Background_footer.jpg");
+  background-position: top center;
+  background-size: cover;
+  height: 750px;
+}
+
+/* Define mobile styles */
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* min-width 641px, medium screens */
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* min-width 1921px, xxlarge screens */
