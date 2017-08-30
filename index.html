@@ -38,11 +38,13 @@
   <script>window.Modernizr || document.write('<script src="template/javascripts/modernizr-2.8.3.min.js"><\/script>')</script>
     
   <script> 
-    $(".scroll").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#intro").offset().top},
-        'slow');
+     $("button.scroll").click(function() {
+    var targetDiv = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top
+    }, 1000, 'easeOutExpo');
 });
+      
     </script> 
     
 </head>
@@ -63,7 +65,9 @@
                 </div>
                 <div class="auto cell"></div>
                 <div class="large-1 cell">
-                    <img src="img/scroll.svg" class="scroll" />    
+                    <button class="scroll">
+                        <img src="img/scroll.svg"/>
+                    </button> 
                 </div>
             </div>
         </div>
@@ -93,7 +97,8 @@
                         <div class="large-8 cell">
                             <h3>Our people.<br>Our team.</h3>
                             <p>We are surfers, we are graduated in sports and we even have a former world bodyboard champion (twice!) in our team... But what we are really proud of is our friendship and good vibes that unites us. This is our most distinguishing feature.
-That’s why you are going to walk out of the ocean wearing a smile on your face!</p>
+That’s why you are going to walk out of the ocean wearing a smile on your face!
+                            <img scr="img/fototeam.jpg" alt="Linha de Onda Team" ></p>
                         </div>
                         <div class="auto cell"></div>
                     </div>
@@ -122,6 +127,7 @@ If your goal is evolution we have got you covered... If you want to move beyond 
                 <a href="https://www.instagram.com/linhadeonda/" class="button">Follow</a>
             </div>
             <div class="large-4 cell">
+<<<<<<< HEAD
                 <a href="https://www.instagram.com/p/BYEGUrHjz4u/?taken-by=linhadeonda"><img src="img/foto_instagram_1.jpg" alt=""></a>
             </div>
             <div class="large-4 cell">
@@ -129,6 +135,15 @@ If your goal is evolution we have got you covered... If you want to move beyond 
             </div>
             <div class="large-4 cell">
                 <a href="https://www.instagram.com/p/BXnQz3jDJRA/?taken-by=linhadeonda"><img src="img/foto_instagram_3.jpg" alt=""></a>
+=======
+                <a href="#"><img src="img/foto_instagram_1.jpg" alt="" class="foto"></a>
+            </div>
+            <div class="large-4 cell">
+                <a href="#"><img src="img/foto_instagram_2.jpg" alt="" class="foto"></a>
+            </div>
+            <div class="large-4 cell">
+                <a href="#"><img src="img/foto_instagram_3.jpg" alt="" class="foto"></a>
+>>>>>>> 1470448d7d6eff87720fbed82b422a043ca41c86
             </div>
         </section>
     </div>

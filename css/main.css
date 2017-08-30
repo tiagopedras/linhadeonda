@@ -101,8 +101,9 @@ header {
   header p {
     font-size: 16px;
     color: #fff; }
-  header img.scroll {
-    margin-top: -30px; }
+  header button.scroll {
+    margin-top: -30px;
+    cursor: pointer; }
 
 #intro {
   padding: 100px 0 0; }
@@ -198,8 +199,16 @@ footer {
     margin-bottom: 20px; }
   #intro h3, #intro p {
     padding: 0 20px; }
-  #our_team h3, p {
+  #our_team h3, #our_team p {
     padding: 0 10px; }
+  #competition h3, #competition p {
+    padding-left: 10px; }
+  #competition h3 {
+    padding-top: 20px; }
+  #competition iframe {
+    width: 100%; }
+  #instagram img.foto {
+    margin-bottom: 10px; }
   #trip_advisor p {
     margin-bottom: 20px; } }
 
