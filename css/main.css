@@ -1,125 +1,149 @@
 @import url(foundation.css);
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url(../fonts/Roboto/Roboto-Medium.ttf); }
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: Roboto-Black;
+  src: url(../fonts/Roboto/Roboto-Black.ttf); }
+
+@font-face {
+  font-family: Cabin-Bold;
+  src: url(../fonts/Cabin/Cabin-Bold.ttf); }
+
+@font-face {
+  font-family: Cabin;
+  src: url(../fonts/Cabin/Cabin-Regular.ttf); }
+
+h1 {
+  font-family: 'Roboto-Black';
+  font-size: 67.5px;
+  color: #104150; }
+
+h2 {
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
+  font-variant: small-caps;
+  color: #fff; }
+
+h3 {
+  font-family: 'Roboto-Medium';
+  font-size: 40px;
+  line-height: 52px;
+  color: #104150;
+  margin-bottom: 20px; }
+
+h4 {
+  font-family: 'Roboto-Medium';
+  font-size: 24px;
+  color: #104150;
+  font-variant: small-caps; }
+
+p {
+  font-family: 'Cabin';
+  font-size: 18px;
+  line-height: 30px; }
+
 header {
   background-image: url("../img/backgroundhero.jpg");
   background-position: center center;
   background-size: cover;
   text-align: center;
-  height: 90vh;
-}
-
-header #logo {
-  margin-top: 100px;
-}
-
-header .grid-container,
-header .grid-y {
-  height: 100%;
-}
+  height: 90vh; }
+  header #logo {
+    margin-top: 50px; }
+  header .grid-container,
+  header .grid-y {
+    height: 100%; }
+  header p {
+    font-size: 16px;
+    color: #fff; }
 
 #intro {
-  padding: 100px 0 0;
-}
-
-#intro #intro_image_2 {
-  position: relative;
-  top: -100px;
-  left: 300px;
-}
+  padding: 100px 0 0; }
+  #intro #intro_image_2 {
+    position: relative;
+    top: -100px;
+    left: 300px; }
+  #intro .large-4 {
+    padding-top: 50px; }
 
 #our_team {
-  background-color: #EAF5FB;
-}
-
-#our_team,
-#our_team .large-4,
-#our_team .grid-y,
-#our_team #team_image {
-  height: 600px;
-}
-
-#our_team #team_image {
-  background-image: url("../img/fototeam.jpg");
-  background-position: center center;
-  background-size: cover;
-}
+  background-color: #EAF5FB; }
+  #our_team,
+  #our_team .large-4,
+  #our_team .grid-y,
+  #our_team #team_image {
+    height: 600px; }
+  #our_team #team_image {
+    background-image: url("../img/fototeam.jpg");
+    background-position: center center;
+    background-size: cover; }
 
 #competition {
-  padding: 100px 0;
-}
+  padding: 100px 0; }
 
 #instagram {
-  padding: 20px 0 100px;
-}
+  padding: 20px 0 100px; }
 
 #promo_code {
   background-image: url("../img/ban-back.jpg");
   background-position: center center;
-  background-size: cover;
-}
-
-#promo_code,
-#promo_code .grid-y {
-  height: 600px;
-}
+  background-size: cover; }
+  #promo_code,
+  #promo_code .grid-y {
+    height: 600px; }
+  #promo_code h3 {
+    font-family: 'Cabin-bold';
+    color: #fff; }
+  #promo_code span {
+    font-variant: small-caps; }
 
 #trip_advisor {
   text-align: center;
-  padding: 100px 0;
-}
-
-#trip_advisor p {
-  width: 90%;
-  margin: 20px auto 0;
-}
+  padding: 100px 0; }
+  #trip_advisor p {
+    width: 90%;
+    margin: 20px auto 0; }
 
 #beaches {
-  padding: 20px 0 100px;
-}
-
-#beaches #matosinhos,
-#beaches #leca {
-  position: relative;
-}
-
-#beaches #matosinhos div,
-#beaches #matosinhos a {
-  position: absolute;
-  left: -60px;
-}
-
-#beaches #matosinhos div {
-  top: 20px;
-}
-
-#beaches #matosinhos a {
-  bottom: 20px;
-}
-
-#beaches #leca {
-  padding-top: 40px;
-}
-
-#beaches #leca div,
-#beaches #leca a {
-  position: absolute;
-  right: -60px;
-  text-align: right;
-}
-
-#beaches #leca div {
-  top: 60px;
-}
-
-#beaches #leca a {
-  bottom: 60px;
-}
+  padding: 20px 0 100px; }
+  #beaches #matosinhos,
+  #beaches #leca {
+    position: relative; }
+  #beaches #matosinhos div,
+  #beaches #matosinhos a {
+    position: absolute;
+    left: -60px; }
+  #beaches #matosinhos div {
+    top: 20px; }
+  #beaches #matosinhos a {
+    bottom: 20px; }
+  #beaches #leca {
+    padding-top: 40px; }
+    #beaches #leca div,
+    #beaches #leca a {
+      position: absolute;
+      right: -60px;
+      text-align: right; }
+    #beaches #leca div {
+      top: 60px; }
+    #beaches #leca a {
+      bottom: 60px; }
 
 footer {
   background-image: url("../img/Background_footer.jpg");
   background-position: top center;
   background-size: cover;
-  height: 750px;
-}
+  height: 750px; }
 
 /* Define mobile styles */
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
