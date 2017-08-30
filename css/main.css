@@ -137,7 +137,7 @@ header {
   background-size: cover; }
   #promo_code,
   #promo_code .grid-y {
-    height: 600px; }
+    height: 500px; }
   #promo_code h3 {
     font-family: 'Cabin-bold';
     color: #fff; }
@@ -191,7 +191,7 @@ footer {
   background-size: cover;
   height: 750px; }
   footer .logo_footer {
-    padding-right: 15px;
+    padding-right: 25px;
     padding-top: 10px; }
   footer .title_logo {
     width: 200px;
