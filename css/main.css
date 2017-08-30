@@ -1,66 +1,79 @@
 @import url(foundation.css);
 @font-face {
   font-family: Roboto-Regular;
-  src: url(../fonts/Roboto/Roboto-Regular.ttf); }
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
 
 @font-face {
   font-family: Roboto-Medium;
-  src: url(../fonts/Roboto/Roboto-Medium.ttf); }
+  src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
 
 @font-face {
   font-family: Roboto-Bold;
-  src: url(../fonts/Roboto/Roboto-Bold.ttf); }
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
 
 @font-face {
   font-family: Roboto-Black;
-  src: url(../fonts/Roboto/Roboto-Black.ttf); }
+  src: url(../fonts/Roboto/Roboto-Black.ttf);
+}
 
 @font-face {
   font-family: Cabin-Bold;
-  src: url(../fonts/Cabin/Cabin-Bold.ttf); }
+  src: url(../fonts/Cabin/Cabin-Bold.ttf);
+}
 
 @font-face {
   font-family: Cabin;
-  src: url(../fonts/Cabin/Cabin-Regular.ttf); }
+  src: url(../fonts/Cabin/Cabin-Regular.ttf);
+}
 
 h1 {
   font-family: 'Roboto-Black';
   font-size: 67.5px;
-  color: #104150; }
+  color: #104150;
+}
 
 h2 {
   font-family: 'Roboto-Medium';
   font-size: 24px;
   font-variant: small-caps;
-  color: #fff; }
+  color: #fff;
+}
 
 h3 {
   font-family: 'Roboto-Medium';
   font-size: 36px;
   line-height: 45px;
   color: #104150;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+}
 
 h4 {
   font-family: 'Roboto-Medium';
   font-size: 24px;
   color: #104150;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+}
 
 h5 {
   font-family: 'Cabin-Bold';
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 h6 {
   font-family: 'Roboto-Medium';
   font-size: 16px;
   color: #899DA5;
-  font-variant: small-caps; }
+  font-variant: small-caps;
+}
 
 p {
   font-family: 'Cabin';
   font-size: 18px;
-  line-height: 30px; }
+  line-height: 30px;
+}
 
 a.button {
   background-color: #2D9CDB;
@@ -74,170 +87,284 @@ a.button {
   font-size: 14px;
   font-family: 'Roboto-Bold';
   border-style: solid;
-  border-color: #2D9CDB; }
+  border-color: #2D9CDB;
+}
 
 .button:hover {
   background: #fff;
   border: 2px;
   border-color: #2D9CDB;
   color: #2D9CDB;
-  border-style: solid; }
+  border-style: solid;
+}
 
-.shadow {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px; }
+@media only screen and (min-width: 40.063em) {
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px;
+  }
+}
 
+/* min-width 641px, medium screens */
 header {
   background-image: url("../img/backgroundhero.jpg");
   background-position: center center;
   background-size: cover;
   text-align: center;
-  height: 100vh; }
-  header #logo {
-    margin-top: 50px; }
-  header .grid-container,
-  header .grid-y {
-    height: 100%; }
-  header p {
-    font-size: 16px;
-    color: #fff; }
-  header button.scroll {
-    margin-top: -30px;
-    cursor: pointer; }
+  height: 100vh;
+}
 
-#intro {
-  padding: 100px 0 0; }
-  #intro #intro_image_2 {
-    position: relative;
-    top: -100px;
-    left: 300px; }
-  #intro .large-4 {
-    padding-top: 50px; }
+header #logo {
+  margin-top: 50px;
+}
+
+header .grid-container,
+header .grid-y {
+  height: 100%;
+}
+
+header p {
+  font-size: 16px;
+  color: #fff;
+}
+
+#intro .large-4 {
+  padding-top: 50px;
+}
 
 #our_team {
-  background-color: #EAF5FB; }
-  #our_team,
-  #our_team .large-4,
-  #our_team .grid-y,
-  #our_team #team_image {
-    height: 600px; }
-  #our_team #team_image {
-    background-image: url("../img/fototeam.jpg");
-    background-position: center center;
-    background-size: cover; }
+  background-color: #EAF5FB;
+}
+
+#our_team #team_image {
+  background-image: url("../img/fototeam.jpg");
+  background-position: center center;
+  background-size: cover;
+}
 
 #competition {
-  padding: 100px 0; }
+  padding: 100px 0;
+}
 
 #instagram {
-  padding: 20px 0 100px; }
-  #instagram .large-12 {
-    margin-bottom: 20px; }
-  #instagram a.button {
-    margin-left: 10px;
-    margin-top: 12px; }
+  padding: 20px 0 100px;
+}
+
+#instagram .large-12 {
+  margin-bottom: 20px;
+}
+
+#instagram a.button {
+  margin-left: 10px;
+  margin-top: 12px;
+}
 
 #promo_code {
   background-image: url("../img/ban-back.jpg");
   background-position: center center;
-  background-size: cover; }
-  #promo_code,
-  #promo_code .grid-y {
-    height: 500px; }
-  #promo_code h3 {
-    font-family: 'Cabin-bold';
-    color: #fff; }
-  #promo_code span {
-    font-variant: small-caps; }
-  #promo_code img {
-    height: 80px;
-    padding-right: 20px; }
+  background-size: cover;
+}
+
+#promo_code,
+#promo_code .grid-y {
+  height: 500px;
+}
+
+#promo_code h3 {
+  font-family: 'Cabin-bold';
+  color: #fff;
+}
+
+#promo_code span {
+  font-variant: small-caps;
+}
+
+#promo_code img {
+  height: 80px;
+  padding-right: 20px;
+}
 
 #trip_advisor {
   text-align: center;
-  padding: 100px 0; }
-  #trip_advisor p {
-    width: 90%;
-    margin: 0px auto 0; }
-  #trip_advisor .large-12 {
-    margin-bottom: 50px; }
-  #trip_advisor h5 {
-    margin-top: 20px; }
-  #trip_advisor .large-4:hover {
-    color: #104150; }
+  padding: 100px 0;
+}
+
+#trip_advisor p {
+  width: 90%;
+  margin: 0px auto 0;
+}
+
+#trip_advisor .large-12 {
+  margin-bottom: 50px;
+}
+
+#trip_advisor h5 {
+  margin-top: 20px;
+}
 
 #beaches {
-  padding: 20px 0 100px; }
+  padding: 20px 0 100px;
+}
 
 footer {
   background-image: url("../img/Background_footer.jpg");
   background-position: top center;
   background-size: cover;
-  height: 750px; }
-  footer .logo_footer {
-    padding-right: 15px;
-    padding-top: 10px; }
-  footer .title_logo {
-    width: 200px;
-    margin-bottom: 30px; }
-  footer p, footer a {
-    margin: 0;
-    padding: 0; }
+  height: 750px;
+}
+
+footer .logo_footer {
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+footer .title_logo {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+footer p, footer a {
+  margin: 0;
+  padding: 0;
+}
 
 /* Define mobile styles */
 @media only screen and (max-width: 40em) {
   h1 {
-    font-size: 40px; }
+    font-size: 40px;
+  }
   header #logo {
-    margin-top: 20px; }
-  #intro #intro_image_2 {
-    position: relative;
-    top: -10px;
-    left: 10px; }
+    margin-top: 20px;
+  }
+  #intro {
+    padding-bottom: 50px;
+  }
   #intro .large-4 {
     padding-top: 50px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  }
   #intro h3, #intro p {
-    padding: 0 20px; }
+    padding: 0 20px;
+  }
+  #our_team {
+    padding-top: 50px;
+  }
   #our_team h3, #our_team p {
-    padding: 0 10px; }
+    padding: 0 10px;
+  }
+  #our_team #team_image {
+    width: 100%;
+    height: 250px;
+  }
   #competition h3, #competition p {
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
   #competition h3 {
-    padding-top: 20px; }
-  #competition iframe {
-    width: 100%; }
+    padding-top: 20px;
+  }
+  #competition #video {
+    width: 100%;
+  }
   #instagram img.foto {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+  }
+  #beaches #matosinhos,
+  #beaches #leca {
+    position: relative;
+    background-color: #104150;
+    margin-bottom: 50px;
+  }
+  #beaches #matosinhos img,
+  #beaches #leca img {
+    opacity: 0.7;
+  }
+  #beaches #matosinhos div,
+  #beaches #leca div {
+    position: absolute;
+    top: 40%;
+  }
+  #beaches #matosinhos h3,
+  #beaches #leca h3 {
+    width: 60%;
+    margin: 0 auto;
+    color: white;
+  }
+  #beaches #matosinhos a,
+  #beaches #leca a {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    margin-right: 20px;
+  }
   #trip_advisor p {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px;
+  }
+  #trip_advisor .large-4 {
+    margin-bottom: 20px;
+  }
+}
 
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* min-width 641px, medium screens */
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 @media only screen and (min-width: 64.063em) {
+  #intro {
+    padding: 100px 0 0;
+  }
+  #intro .large-4 {
+    order: 2;
+  }
+  #intro .large-7 {
+    order: 1;
+  }
+  #intro #intro_image_2 {
+    position: relative;
+    top: -100px;
+    left: 300px;
+  }
+  #trip_advisor .large-4:hover {
+    color: #104150;
+  }
+  #our_team,
+  #our_team .large-4,
+  #our_team .grid-y,
+  #our_team #team_image {
+    height: 600px;
+  }
+  #competition #video {
+    width: 640px;
+    height: 360px;
+  }
   #beaches #matosinhos,
   #beaches #leca {
-    position: relative; }
+    position: relative;
+  }
   #beaches #matosinhos div,
   #beaches #matosinhos a {
     position: absolute;
-    left: -60px; }
+    left: -60px;
+  }
   #beaches #matosinhos div {
-    top: 20px; }
+    top: 20px;
+  }
   #beaches #matosinhos a {
-    bottom: 20px; }
+    bottom: 20px;
+  }
   #beaches #leca {
-    padding-top: 40px; }
-    #beaches #leca div,
-    #beaches #leca a {
-      position: absolute;
-      right: -60px;
-      text-align: right; }
-    #beaches #leca div {
-      top: 60px; }
-    #beaches #leca a {
-      bottom: 80px; } }
+    padding-top: 40px;
+  }
+  #beaches #leca div,
+  #beaches #leca a {
+    position: absolute;
+    right: -60px;
+    text-align: right;
+  }
+  #beaches #leca div {
+    top: 60px;
+  }
+  #beaches #leca a {
+    bottom: 80px;
+  }
+}
 
 /* min-width 1025px, large screens */
 /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
