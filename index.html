@@ -36,8 +36,15 @@
   <!-- JS -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
   <script>window.Modernizr || document.write('<script src="template/javascripts/modernizr-2.8.3.min.js"><\/script>')</script>
-
-  <!-- FONTS -->
+    
+  <script> 
+    $(".scroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#intro").offset().top},
+        'slow');
+});
+    </script> 
+    
 </head>
 
 <body>
@@ -56,7 +63,7 @@
                 </div>
                 <div class="auto cell"></div>
                 <div class="large-1 cell">
-                    Scroll
+                    <img src="img/scroll.svg" class="scroll" />    
                 </div>
             </div>
         </div>
@@ -65,8 +72,8 @@
     <div class="grid-container" id="intro">
         <div class="grid-x">
             <div class="large-7 cell">
-                <img src="img/aula.jpg" alt="">
-                <img src="img/bandeira.jpg" alt="" id="intro_image_2">
+                <img src="img/aula.jpg" alt="Surf Lesson" class="shadow">
+                <img src="img/bandeira.jpg" alt="Linha de Onda School Flag" id="intro_image_2" class="shadow">
             </div>
                     <div class="large-4 large-offset-1 cell">
                         <h3>Sea.<br>Surf.<br>Bodyboard.</h3>
@@ -99,7 +106,7 @@ That’s why you are going to walk out of the ocean wearing a smile on your face
     <div class="grid-container">
         <section class="grid-x" id="competition">
             <div class="large-7 cell">
-                <img src="img/aula.jpg" alt="">
+                <iframe class="shadow" src="https://player.vimeo.com/video/84411312?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <div class="large-4 large-offset-1 cell">
                 <h3>Evolution.<br>Competition.</h3>
@@ -111,7 +118,8 @@ If your goal is evolution we have got you covered... If you want to move beyond 
         <section class="grid-x grid-margin-x" id="instagram">
             <div class="large-12 cell">
                 <h4>check our instagram</h4>
-                <a href="#"><img src="https://unsplash.it/200/80/?random" alt=""></a>
+                <a href="https://www.instagram.com/linhadeonda/"><img src="img/logos/logo-inst.svg" alt=""></a>
+                <a href="https://www.instagram.com/linhadeonda/" class="button">Follow</a>
             </div>
             <div class="large-4 cell">
                 <a href="#"><img src="img/foto_instagram_1.jpg" alt=""></a>
@@ -130,13 +138,17 @@ If your goal is evolution we have got you covered... If you want to move beyond 
             <div class="grid-x">
                 <div class="large-4 cell">
                     <div class="grid-y">
-                        <div class="large-2 cell">logos</div>
+                        <div class="auto cell"></div>
+                        <div class="large-2 cell">
+                            <img src="img/logos/DeeplyLogo.svg" class="logo_footer"/>
+                            <img src="img/lo_print_lycra.png" class="logo_footer"/>
+                        </div>
                         <div class="auto cell"></div>
                         <div class="large-4 cell">
                             <h3>Use our promocode <br><span>linhadeonda</span><br>and get a 10% Discount on Deeply.eu</h3>
                         </div>
                         <div class="auto cell"></div>
-                        <div class="large-2 cell">footer</div>
+                        <div class="large-2 cell"><a href="deeply.eu/pt/" class="button">Shop now</a></div>
                     </div>
                 </div>
             </div>
@@ -148,34 +160,37 @@ If your goal is evolution we have got you covered... If you want to move beyond 
             <h4 class="large-12 cell">what they say</h4>
             <div class="large-4 cell">
                 <img src="img/1stGuy.jpg" alt="">
+                <h5>Illkkako, Finland</h5>
                 <p>We highly recommend this school if surfing in Porto region!</p>
             </div>
             <div class="large-4 cell">
-                <img src="img/1stGuy.jpg" alt="">
+                <img src="img/2ndGuy.jpg" alt="">
+                <h5>Gianluca B, Italy</h5>
                 <p>Great school and great teachers! It's the perfect place to learn surfing...</p>
             </div>
             <div class="large-4 cell">
-                <img src="img/1stGuy.jpg" alt="">
-                <p>Amazing team that treats you like a friend (...)</p>
+                <img src="img/3rdGuy.jpg" alt="">
+                <h5>_JMRam0s_, Portugal</h5>
+                <p>Amazing team that treats you like a friend. (...) Highly recommended.</p>
             </div>
         </section>
         <section class="grid-x" id="beaches">
             <div class="large-5 large-offset-1 cell" id="matosinhos">
-                <img src="img/mat.jpg" alt="">
+                <img src="img/mat.jpg" alt="" class="shadow">
                 <div>
-                    <h5>Where we are</h5>
+                    <p>Where we are</p>
                     <h3>Praia de Matosinhos</h3>
                 </div>
-                <a href="">See the beach live</a>
+                    <a href="http://beachcam.meo.pt/livecams/praia-de-matosinhos/" class="button">See the beach live</a>
             </div>
             <div class="large-4 large-offset-1 cell" id="leca">
-                <img src="img/lec.jpg" alt="">
+                <img src="img/lec.jpg" alt="" class="shadow">
                 <div>
-                    <h5>Where we are</h5>
+                    <p>Where we are</p>
                     <h3>Praia de Leça</h3>
                 </div>
-                <div class="button">
-                    <a href="">See the beach live</a>
+                <div>
+                    <a href="http://beachcam.meo.pt/livecams/le%C3%A7a-da-palmeira/" class="button">See the beach live</a>
                 </div>
             </div>
         </section>
@@ -185,7 +200,7 @@ If your goal is evolution we have got you covered... If you want to move beyond 
         <div class="grid-container">
             <div class="grid-x">
                 <div class="large-5 cell">
-                    <img src="assetsL/text.svg" alt="">
+                    <img src="img/title_logo.png" alt="" class="title_logo">
                     <p>Rua Brito e Cunha, 896 Loja B<br>4450-028 Matosinhos</p>
                     <a href="">linhadeonda@gmail.com</a>
                     <p>+351 934 613 039</p>
@@ -194,18 +209,18 @@ If your goal is evolution we have got you covered... If you want to move beyond 
                     <div class="grid-x grid-margin-x">
                         <div class="large-8 cell">
                             <h4>find us</h4>
-                            <img src="img/logos/Facebook.svg" class="logo_footer"/>
-                            <img src="img/logos/Instagram.svg" class="logo_footer"/>
-                            <img src="img/logos/Vimeo.svg" class="logo_footer"/>
-                            <img src="img/logos/TripAdvisor.svg" class="logo_footer"/>
+                            <img src="img/logos/FacebookLogo.svg" class="logo_footer"/>
+                            <img src="img/logos/InstagramLogo.svg" class="logo_footer"/>
+                            <img src="img/logos/VimeoLogo.svg" class="logo_footer"/>
+                            <img src="img/logos/TripAdvisorLogo.svg" class="logo_footer"/>
                         </div>
                         <div class="large-4 cell">
                             <h4>powered by</h4>
-                            <img src="assetsL/logos/Deeply.svg" class="logo_footer" />
+                            <img src="img/logos/DeeplyLogo.svg" class="logo_footer" />
                         </div>
                         <div class="large-12 cell">
                             <h4>partners</h4>
-                            <img src="img/logos/AON.svg" class="logo_footer"/>
+                            <img src="img/logos/AON%20Logo%20(1).svg" class="logo_footer"/>
                             <img src="img/logos/golocal.svg" class="logo_footer"/>
                             <img src="img/logos/withlocals.svg" class="logo_footer"/>
                             <img src="img/logos/focus.svg" class="logo_footer"/>

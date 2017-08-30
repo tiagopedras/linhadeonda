@@ -36,8 +36,8 @@ h2 {
 
 h3 {
   font-family: 'Roboto-Medium';
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 36px;
+  line-height: 45px;
   color: #104150;
   margin-bottom: 20px; }
 
@@ -47,17 +47,46 @@ h4 {
   color: #104150;
   font-variant: small-caps; }
 
+h5 {
+  font-family: 'Cabin-Bold';
+  font-size: 18px; }
+
 p {
   font-family: 'Cabin';
   font-size: 18px;
   line-height: 30px; }
+
+a.button {
+  background-color: #2D9CDB;
+  border: 2px;
+  border-radius: 25px;
+  color: white;
+  padding: 8px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: 'Roboto-Bold';
+  border-style: solid;
+  border-color: #2D9CDB; }
+
+.button:hover {
+  background: #fff;
+  border: 2px;
+  border-color: #2D9CDB;
+  color: #2D9CDB;
+  border-style: solid; }
+
+.shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 20px 60px 0px; }
 
 header {
   background-image: url("../img/backgroundhero.jpg");
   background-position: center center;
   background-size: cover;
   text-align: center;
-  height: 90vh; }
+  height: 100vh; }
   header #logo {
     margin-top: 50px; }
   header .grid-container,
@@ -66,6 +95,8 @@ header {
   header p {
     font-size: 16px;
     color: #fff; }
+  header img.scroll {
+    margin-top: -30px; }
 
 #intro {
   padding: 100px 0 0; }
@@ -93,6 +124,11 @@ header {
 
 #instagram {
   padding: 20px 0 100px; }
+  #instagram .large-12 {
+    margin-bottom: 20px; }
+  #instagram a.button {
+    margin-left: 10px;
+    margin-top: 12px; }
 
 #promo_code {
   background-image: url("../img/ban-back.jpg");
@@ -106,13 +142,22 @@ header {
     color: #fff; }
   #promo_code span {
     font-variant: small-caps; }
+  #promo_code img {
+    height: 80px;
+    padding-right: 20px; }
 
 #trip_advisor {
   text-align: center;
   padding: 100px 0; }
   #trip_advisor p {
     width: 90%;
-    margin: 20px auto 0; }
+    margin: 0px auto 0; }
+  #trip_advisor .large-12 {
+    margin-bottom: 50px; }
+  #trip_advisor h5 {
+    margin-top: 20px; }
+  #trip_advisor .large-4:hover {
+    color: #104150; }
 
 #beaches {
   padding: 20px 0 100px; }
@@ -137,15 +182,43 @@ header {
     #beaches #leca div {
       top: 60px; }
     #beaches #leca a {
-      bottom: 60px; }
+      bottom: 80px; }
 
 footer {
   background-image: url("../img/Background_footer.jpg");
   background-position: top center;
   background-size: cover;
   height: 750px; }
+  footer .logo_footer {
+    padding-right: 15px;
+    padding-top: 10px; }
+  footer .title_logo {
+    width: 200px;
+    margin-bottom: 30px; }
+  footer p, footer a {
+    margin: 0;
+    padding: 0; }
 
 /* Define mobile styles */
+@media only screen and (max-width: 40em) {
+  h1 {
+    font-size: 40px; }
+  header #logo {
+    margin-top: 20px; }
+  #intro #intro_image_2 {
+    position: relative;
+    top: -10px;
+    left: 10px; }
+  #intro .large-4 {
+    padding-top: 50px;
+    margin-bottom: 20px; }
+  #intro h3, #intro p {
+    padding: 0 20px; }
+  #our_team h3, p {
+    padding: 0 10px; }
+  #trip_advisor p {
+    margin-bottom: 20px; } }
+
 /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 /* min-width 641px, medium screens */
 /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
